@@ -4,18 +4,18 @@ import (
 	"math/rand"
 )
 
-func randomBetweenInt(min, max int) int {
+func RandomBetweenInt(min, max int) int {
 	return rand.Intn(max-min+1) + min
 }
 
-func minInt(a, b int) int {
+func MinInt(a, b int) int {
 	if a < b {
 		return a
 	}
 	return b
 }
 
-func maxInt(a, b, int) int {
+func MaxInt(a, b, int) int {
 	if a > b {
 		return a
 	}

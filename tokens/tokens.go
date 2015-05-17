@@ -5,35 +5,35 @@ import (
 	"fmt"
 )
 
-var token25 chan string
-var token50 chan string
+var Token25 chan string
+var Token50 chan string
 
 func generator() {
 	for {
 
 		data := make([]byte, 50)
 
-		for {
-			if _, err := rand.Read(data); err == nil {
-				continue
-			}
+		if _, err := rand.Read(data); err != nil {
+			fmt.Println(err)
+			continue
 		}
 		select {
-		case token25 <- fmt.Sprintf("%x", data):
-		case token50 <- fmt.Sprintf("%x", data):
+		case Token25 <- fmt.Sprintf("%x", data):
+		case Token50 <- fmt.Sprintf("%x", data):
 		}
 
 	}
 }
 
 func SpawnGenerators(count int64) {
-	for x := 0; x < (count - 1); x++ {
+	var x int64
+	for x = 0; x < (count); x++ {
 		go generator()
 	}
 }
 
 func init() {
-	token25 = make(chan string)
-	token50 = make(chan string)
-	go generator()
+	Token25 = make(chan string)
+	Token50 = make(chan string)
+	SpawnGenerators(1)
 }
