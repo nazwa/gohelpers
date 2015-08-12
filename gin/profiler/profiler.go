@@ -2,7 +2,7 @@ package profiler
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/wblakecaldwell/profiler"
+	"github.com/nazwa/profiler"
 )
 
 func AttachRoutes(group *gin.RouterGroup) {
