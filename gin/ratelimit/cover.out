@@ -1,0 +1,7 @@
+mode: set
+bitbucket.org\tidepayments\gohelpers\gin\ratelimit\ratelimit.go:16.32,18.2 1 1
+bitbucket.org\tidepayments\gohelpers\gin\ratelimit\ratelimit.go:20.80,27.33 5 1
+bitbucket.org\tidepayments\gohelpers\gin\ratelimit\ratelimit.go:32.2,33.11 2 1
+bitbucket.org\tidepayments\gohelpers\gin\ratelimit\ratelimit.go:27.33,30.3 2 1
+bitbucket.org\tidepayments\gohelpers\gin\ratelimit\ratelimit.go:37.77,48.30 7 0
+bitbucket.org\tidepayments\gohelpers\gin\ratelimit\ratelimit.go:48.30,50.3 0 0
