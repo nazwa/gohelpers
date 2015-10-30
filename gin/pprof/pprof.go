@@ -6,12 +6,12 @@ import (
 )
 
 func AttachRoutes(group *gin.RouterGroup) {
-	group.GET("/pprof/", gin.WrapF(pprof.Index))
-	group.GET("/pprof/heap", gin.WrapF(pprof.Index))
-	group.GET("/pprof/block", gin.WrapF(pprof.Index))
-	group.GET("/pprof/goroutine", gin.WrapF(pprof.Index))
-	group.GET("/pprof/threadcreate", gin.WrapF(pprof.Index))
-	group.GET("/pprof/cmdline", gin.WrapF(pprof.Cmdline))
-	group.GET("/pprof/profile", gin.WrapF(pprof.Profile))
-	group.GET("/pprof/symbol", gin.WrapF(pprof.Symbol))
+	group.GET("/debug/pprof/", gin.WrapF(pprof.Index))
+	group.GET("/debug/pprof/heap", gin.WrapF(pprof.Index))
+	group.GET("/debug/pprof/block", gin.WrapF(pprof.Index))
+	group.GET("/debug/pprof/goroutine", gin.WrapF(pprof.Index))
+	group.GET("/debug/pprof/threadcreate", gin.WrapF(pprof.Index))
+	group.GET("/debug/pprof/cmdline", gin.WrapF(pprof.Cmdline))
+	group.GET("/debug/pprof/profile", gin.WrapF(pprof.Profile))
+	group.GET("/debug/pprof/symbol", gin.WrapF(pprof.Symbol))
 }
