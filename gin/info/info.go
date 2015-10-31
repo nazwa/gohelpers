@@ -9,7 +9,7 @@ import (
 
 type InfoStruct struct {
 	CurrentTime time.Time
-	Uptime      time.Duration
+	Uptime      string
 	GoVersion   string
 }
 
@@ -28,7 +28,7 @@ func AttachRoutes(group *gin.RouterGroup) {
 func InfoHandler(c *gin.Context) {
 	info := InfoStruct{
 		CurrentTime: time.Now(),
-		Uptime:      time.Now().Sub(startTime),
+		Uptime:      time.Now().Sub(startTime).String(),
 		GoVersion:   runtime.Version(),
 	}
 	c.JSON(http.StatusOK, info)
