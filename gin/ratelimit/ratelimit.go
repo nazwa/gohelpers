@@ -1,7 +1,7 @@
 package ratelimit
 
 import (
-	"github.com/gin-gonic/gin"
+	"gopkg.in/gin-gonic/gin.v1"
 	rate "github.com/nazwa/go-rate"
 	"sync"
 	"time"

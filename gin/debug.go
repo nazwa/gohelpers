@@ -4,7 +4,7 @@ import (
 	"bitbucket.org/tidepayments/gohelpers/gin/info"
 	"bitbucket.org/tidepayments/gohelpers/gin/pprof"
 	"bitbucket.org/tidepayments/gohelpers/gin/profiler"
-	"github.com/gin-gonic/gin"
+	"gopkg.in/gin-gonic/gin.v1"
 )
 
 func AssignDebugHandlers(group *gin.RouterGroup) {
