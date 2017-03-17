@@ -1,10 +1,11 @@
 package ratelimit
 
 import (
-	"gopkg.in/gin-gonic/gin.v1"
-	rate "github.com/nazwa/go-rate"
 	"sync"
 	"time"
+
+	"github.com/gin-gonic/gin"
+	rate "github.com/nazwa/go-rate"
 )
 
 type LimiterStruct struct {

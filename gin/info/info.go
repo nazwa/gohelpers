@@ -1,10 +1,11 @@
 package info
 
 import (
-	"gopkg.in/gin-gonic/gin.v1"
 	"net/http"
 	"runtime"
 	"time"
+
+	"github.com/gin-gonic/gin"
 )
 
 type InfoStruct struct {

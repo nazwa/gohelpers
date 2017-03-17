@@ -1,8 +1,9 @@
 package pprof
 
 import (
-	"gopkg.in/gin-gonic/gin.v1"
 	"net/http/pprof"
+
+	"github.com/gin-gonic/gin"
 )
 
 func AttachRoutes(group *gin.RouterGroup) {
